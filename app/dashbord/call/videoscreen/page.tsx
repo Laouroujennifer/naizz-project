@@ -13,7 +13,7 @@ export default function VideoScreen() {
       <div className="bg-black rounded-md overflow-hidden relative">
         {/* Bouton fermer */}
         <button
-          onClick={() => router.push("/dashbord/call/callendedscreen")}
+          onClick={() => router.push("/dashbord/call/lowcoinalertscreen")}
           className="absolute top-4 right-4 text-white text-2xl font-bold z-10"
         >
           ✕

@@ -31,7 +31,7 @@ export default function ConversationCard({
         </div>
 
         <div className="flex-1">
-          <div className="font-semibold">{title}</div>
+          <div className="font-semibold text-black">{title}</div>
           <div className="text-xs text-gray-500">{subtitle}</div>
           <div className="text-xs text-gray-400  mt-1">Call time: {callTime}</div>
         </div>

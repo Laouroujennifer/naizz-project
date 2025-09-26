@@ -23,7 +23,7 @@ export default function LanguageAgentsPage() {
       
       {/* Header */}
       <div className="mb-4 md:mb-6">
-        <h1 className="text-xl md:text-2xl font-semibold">Hello Mide,</h1>
+        <h1 className="text-xl text-black md:text-2xl font-semibold">Hello Mide,</h1>
         <p className="text-sm text-gray-500">Agents &gt; Select agent</p>
       </div>
 
@@ -41,7 +41,7 @@ export default function LanguageAgentsPage() {
       </div>
 
       {/* Section title */}
-      <h2 className="text-base md:text-lg font-medium mb-4 md:mb-6">English</h2>
+      <h2 className="text-base text-black md:text-lg font-medium mb-4 md:mb-6">English</h2>
 
       {/* Agents Grid */}
       <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 md:gap-6">

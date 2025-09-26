@@ -10,11 +10,11 @@ export default function Review() {
     <DashboardLayout>
       <div className="mt-8 sm:mt-8">
       
-      <h1 className="text-xl font-semibold">Hello Mide,</h1>
+      <h1 className="text-xl text-black font-semibold">Hello Mide,</h1>
       <p className="text-sm text-gray-500 mb-6">Conversations &lt; Review</p>
 
       <div className="mb-4">
-        <h2 className="text-lg font-semibold">Conversation with Coach Dorothy</h2>
+        <h2 className="text-lg text-black font-semibold">Conversation with Coach Dorothy</h2>
       </div>
 
       {/* Player */}

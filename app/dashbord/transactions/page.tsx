@@ -17,7 +17,7 @@ export default function TransactionsPage() {
       <div className="pt-16 lg:pt-0 px-4 sm:px-6 lg:px-6 space-y-4 sm:space-y-5 md:space-y-6">
         {/* Header */}
         <div className="mt-4 sm:mt-0">
-          <h1 className="text-xl sm:text-2xl font-semibold">Hello Mide,</h1>
+          <h1 className="text-xl text-black sm:text-2xl font-semibold">Hello Mide,</h1>
           <p className="text-sm text-gray-500 mb-4 sm:mb-6">Transactions</p>
         </div>
 
@@ -25,7 +25,7 @@ export default function TransactionsPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
           {/* Wallet card */}
           <div className="relative bg-blue-50 rounded-2xl p-4 sm:p-5 md:p-6 flex flex-col justify-center lg:col-span-2 overflow-hidden min-h-[140px] sm:min-h-[160px] md:min-h-[180px]">
-            <p className="text-3xl sm:text-4xl md:text-5xl font-bold">10,000</p>
+            <p className="text-3xl text-black sm:text-4xl md:text-5xl font-bold">10,000</p>
             <p className="text-gray-600 text-sm sm:text-base">Coins left in your wallet</p>
 
             {/* Image décor */}

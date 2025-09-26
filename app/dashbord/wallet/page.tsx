@@ -32,7 +32,7 @@ export default function WalletPage() {
       <div className="pt-16 lg:pt-0 px-4 sm:px-6 lg:px-6">
         {/* Header */}
         <div className="mt-4 sm:mt-0 mb-4 sm:mb-6">
-          <h1 className="text-xl sm:text-2xl font-semibold">Hello Mide,</h1>
+          <h1 className="text-xl sm:text-2xl text-black font-semibold">Hello Mide,</h1>
           <p className="text-sm text-gray-500">Wallet</p>
         </div>
 
@@ -43,7 +43,7 @@ export default function WalletPage() {
 
         {/* Coin Packs Section */}
         <div>
-          <h2 className="text-base sm:text-lg font-medium mb-4 sm:mb-6">Purchase a coin pack</h2>
+          <h2 className="text-base sm:text-lg font-medium mb-4 text-black sm:mb-6">Purchase a coin pack</h2>
 
           <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
             {coinPacks.map((p, i) => (

@@ -8,8 +8,8 @@ export default function Home() {
        <div className="mt-12 sm:mt-12">
       {/* Header */}
       <div className="mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-        <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mb-1 sm:mb-2">Hello Mide,</h1>
-        <p className="text-gray-600 text-xs sm:text-sm md:text-sm lg:text-base xl:text-base">Welcome to your Naizz dashboard</p>
+        <h1 className="text-xl sm:text-2xl text-black md:text-2xl lg:text-3xl xl:text-3xl font-bold mb-1 sm:mb-2">Hello Mide,</h1>
+        <p className="text-gray-600 text-xs text-black  sm:text-sm md:text-sm lg:text-base xl:text-base">Welcome to your Naizz dashboard</p>
       </div>
 
       {/* Cards Section */}
@@ -73,7 +73,7 @@ export default function Home() {
 
       {/* Weekly Report */}
       <div className="mb-4 sm:mb-5 md:mb-6 lg:mb-8">
-        <h2 className="font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl mb-2 sm:mb-3 md:mb-4 lg:mb-4 xl:mb-4">Weekly Report</h2>
+        <h2 className="font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl mb-2 sm:mb-3 text-black md:mb-4 lg:mb-4 xl:mb-4">Weekly Report</h2>
         <div className="bg-gray-50 rounded-lg p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16 2xl:p-20 text-center shadow-sm">
           <p className="text-gray-600 mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-6 text-xs sm:text-sm md:text-base lg:text-base xl:text-base leading-relaxed">
             Hi Mide, <br /> You have nothing to show here...

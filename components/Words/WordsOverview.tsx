@@ -13,7 +13,7 @@ export default function WordsOverview({ highest, onAction }: Props) {
       <div className="flex-1 bg-blue-50 rounded-lg p-4 sm:p-6 flex items-center justify-between">
         <div className="flex items-center justify-between w-full">
           <div>
-            <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold">
+            <div className="text-4xl sm:text-5xl text-black md:text-6xl font-extrabold">
               {highest}
             </div>
             <div className="text-xs sm:text-sm text-gray-600 mt-1">

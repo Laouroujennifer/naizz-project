@@ -13,7 +13,7 @@ export default function ConversationsOverview({ total }: Props) {
       <div className="md:col-span-2 flex items-center justify-between bg-blue-100 p-6 rounded-md h-32">
         <div>
           {/* Taille augmentée */}
-          <h2 className="text-6xl font-bold">{total}</h2>
+          <h2 className="text-6xl text-black font-bold">{total}</h2>
           <p className="text-sm text-gray-700">Total conversations had</p>
         </div>
         <FaUser className="text-blue-700 text-8xl" />

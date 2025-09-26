@@ -24,6 +24,7 @@ export default function RoleplayAgentsPage() {
   return (
     <DashboardLayout>
           {/* Header */}
+          <div className="mt-8 sm:mt-8">
           <h1 className="text-xl font-semibold">Hello Mide,</h1>
           <p className="text-sm text-gray-500 mb-6">Agents &gt; Select agent</p>
     
@@ -46,6 +47,7 @@ export default function RoleplayAgentsPage() {
             {roleplayAgents.map((a, i) => (
               <AgentCard key={i} {...a} onClick={() => setShowModal(true)} />
             ))}
+          </div>
           </div>
     
           {/* Upgrade modal */}

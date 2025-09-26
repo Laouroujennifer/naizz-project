@@ -10,23 +10,47 @@ type Props = {
   savedOn?: string;
 };
 
-export default function SavedWordCard({ word, lang="English", level="Beginner", definition="", usage="", savedOn }: Props) {
+export default function SavedWordCard({
+  word,
+  lang = "French",
+  level = "Beginner",
+  definition = "",
+  usage = "",
+  savedOn,
+}: Props) {
   return (
-    <div className="bg-white rounded-md shadow-sm p-4">
-      <div className="flex justify-between items-start">
-        <div>
-          <div className="font-semibold text-lg">{word}</div>
-          <div className="text-xs text-gray-500">{lang} · {level}</div>
+    <div className="bg-gray-100 rounded-md shadow-sm p-3 sm:p-4 lg:p-5 h-full flex flex-col justify-between">
+      {/* Titre et menu langue */}
+      <div className="flex justify-between items-start border-b border-gray-200 pb-2">
+        <div className="min-w-0">
+          <div className="font-semibold text-base sm:text-lg md:text-xl break-words">
+            {word}
+          </div>
+          <div className="text-xs sm:text-sm text-gray-500">
+            {lang} · {level}
+          </div>
         </div>
-        <div className="text-xs text-gray-400">English ▾</div>
+        <div className="text-xs sm:text-sm text-gray-500 cursor-pointer">
+          English ▾
+        </div>
       </div>
 
-      <div className="mt-3 text-sm text-gray-700">
-        <div className="italic">{definition}</div>
-        <div className="mt-2 text-xs text-gray-500">usage * {usage}</div>
+      {/* Définition */}
+      <div className="mt-3 text-sm sm:text-base text-gray-700">
+        <span className="italic">{lang}</span>
+        <div className="text-xs sm:text-sm">Adj (feminine)</div>
+        <div>
+          means <span className="font-semibold">“{definition}”</span>
+        </div>
+        <div className="mt-2 text-xs sm:text-sm text-gray-600">
+          usage <span className="italic">“{usage}”</span>
+        </div>
       </div>
 
-      <div className="mt-4 text-xs text-gray-400">Saved on: {savedOn ?? "10/10/25"}</div>
+      {/* Date */}
+      <div className="mt-4 text-xs sm:text-sm text-gray-400">
+        Saved on: {savedOn ?? "10/10/25"}
+      </div>
     </div>
   );
 }

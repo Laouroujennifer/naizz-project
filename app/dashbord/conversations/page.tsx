@@ -16,10 +16,11 @@ export default function ConversationsPage() {
 
   return (
     <DashboardLayout>
+      <div className="mt-8 sm:mt-8">
       <h1 className="text-xl font-semibold">Hello Mide,</h1>
       <p className="text-sm text-gray-500 mb-6">Conversations</p>
 
-      <ConversationsOverview total={10} onAction={() => {}} />
+      <ConversationsOverview total={10} />
 
       <h3 className="mb-3 font-medium">My conversations</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -30,6 +31,7 @@ export default function ConversationsPage() {
             onReview={() => router.push("/dashbord/conversations/review")}
           />
         ))}
+      </div>
       </div>
     </DashboardLayout>
   );

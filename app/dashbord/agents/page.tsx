@@ -19,6 +19,8 @@ export default function LanguageAgentsPage() {
 
   return (
     <DashboardLayout>
+      <div className="mt-8 sm:mt-8">
+      
       {/* Header */}
       <div className="mb-4 md:mb-6">
         <h1 className="text-xl md:text-2xl font-semibold">Hello Mide,</h1>
@@ -46,6 +48,7 @@ export default function LanguageAgentsPage() {
         {languageAgents.map((a, i) => (
           <AgentCard key={i} {...a} onClick={() => setShowModal(true)} />
         ))}
+      </div>
       </div>
 
       {/* Upgrade modal */}

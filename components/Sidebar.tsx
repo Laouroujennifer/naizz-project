@@ -82,6 +82,46 @@ export default function Sidebar() {
                 <img src="/images/White bg.png" alt="French" className="h-3 w-3" />
                 French
               </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-xs hover:bg-gray-100"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-3 w-3" />
+                French
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-xs hover:bg-gray-100"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-3 w-3" />
+                Spanish
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-xs hover:bg-gray-100"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-3 w-3" />
+                German
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-xs hover:bg-gray-100"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-3 w-3" />
+                Yoruba
+              </button>
             </div>
           )}
         </div>
@@ -144,6 +184,36 @@ export default function Sidebar() {
               >
                 <img src="/images/White bg.png" alt="French" className="h-4 w-4" />
                 French Model
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 transition-colors"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-4 w-4" />
+                Spanish Model
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 transition-colors"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-4 w-4" />
+                German Model
+              </button>
+                 <button
+                onClick={() => {
+                  setLanguage("French Model");
+                  setIsLangOpen(false);
+                }}
+                className="w-full flex items-center gap-2 px-3 py-2 text-sm hover:bg-gray-100 transition-colors"
+              >
+                <img src="/images/White bg.png" alt="French" className="h-4 w-4" />
+                Yoruba Model
               </button>
             </div>
           )}

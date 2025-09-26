@@ -21,7 +21,7 @@ export default function MoreFeatures() {
               height={100}
             />
           </div>
-          <h3 className="font-semibold text-lg mb-2">Free conversation coins</h3>
+          <h3 className="font-semibold text-black text-lg mb-2">Free conversation coins</h3>
           <p className="text-gray-600">
             Yhup, our starter pack gives you free coins to hold conversations with your agent. Cool right?
           </p>
@@ -37,7 +37,7 @@ export default function MoreFeatures() {
               height={100}
             />
           </div>
-          <h3 className="font-semibold text-lg mb-2">Games</h3>
+          <h3 className="font-semibold text-black text-lg mb-2">Games</h3>
           <p className="text-gray-600">
             Yhup, our starter pack gives you free coins to hold conversations with your agent. Cool right?
           </p>
@@ -47,7 +47,7 @@ export default function MoreFeatures() {
     <div className="bg-blue-50 p-6 rounded-lg shadow-md md:col-span-2 flex flex-col md:flex-row justify-between  ">
   {/* Texte en haut à gauche */}
   <div className="text-left flex-1">
-    <h3 className="font-semibold text-lg mb-2">
+    <h3 className="font-semibold text-black text-lg mb-2">
       Real time call conversation
     </h3>
     <p className="text-gray-600 ">

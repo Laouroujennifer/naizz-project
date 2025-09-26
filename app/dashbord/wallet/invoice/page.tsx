@@ -16,6 +16,7 @@ function InvoiceContent() {
   return (
     <>
       {/* Titre et sous-titre comme dans les autres pages */}
+      <div className="mt-12 sm:mt-12">
       <h1 className="text-xl font-semibold">Hello Mide,</h1>
       <p className="text-sm text-gray-500 mb-6">Wallet &lt; Purchase coin</p>
 
@@ -55,6 +56,7 @@ function InvoiceContent() {
             Complete Payment
           </button>
         </div>
+      </div>
       </div>
     </>
   );

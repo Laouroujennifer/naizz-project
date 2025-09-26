@@ -16,7 +16,7 @@ export default function Login() {
       <div className="w-full md:w-3/4 bg-gradient-to-r from-blue-200 to-blue-300 rounded-xl shadow-xl flex flex-col lg:flex-row items-center justify-between">
         <div className="hidden md:block md:w-1/2">
           <Image
-            src="/images/logo_complet_bleu.png"
+            src="/images/Vector (2).png"
             alt="Naizz Logo"
             width={200}
             height={200}
@@ -35,7 +35,7 @@ export default function Login() {
 
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="email" className="sr-only">
+                <label htmlFor="email" className="sr-only text-black">
                   Email address
                 </label>
                 <input

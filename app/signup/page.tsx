@@ -38,7 +38,7 @@ export default function Signup() {
 
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="sr-only">Name</label>
+              <label htmlFor="name" className="sr-only text-black">Name</label>
               <input
                 id="name"
                 name="name"
@@ -50,7 +50,7 @@ export default function Signup() {
             </div>
 
             <div>
-              <label htmlFor="email" className="sr-only">Email address</label>
+              <label htmlFor="email" className="sr-only text-black">Email address</label>
               <input
                 id="email"
                 name="email"

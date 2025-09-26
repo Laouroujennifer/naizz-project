@@ -3,7 +3,7 @@
 export default function SupportedBy() {
   return (
     <section className="bg-white py-16 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl text-black font-bold mb-4">
         Supported <span className="text-blue-600">by</span>
       </h2>
       <p className="text-gray-600 mb-12">

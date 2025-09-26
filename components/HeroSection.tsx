@@ -10,7 +10,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Heading */}
-      <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-center leading-snug sm:leading-tight mb-4 sm:mb-6">
+      <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold  text-black text-center leading-snug sm:leading-tight mb-4 sm:mb-6">
         Say goodbye to <span className="text-blue-600">awkward lessons</span>, <br className="hidden sm:block" />
         hello <span className="text-blue-600">real conversations</span>.
       </h1>

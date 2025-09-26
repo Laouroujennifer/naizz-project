@@ -5,7 +5,7 @@ import DashboardLayout from "@/components/DashboardLayout";
 export default function Home() {
   return (
     <DashboardLayout>
-       <div className="mt-8 sm:mt-8">
+       <div className="mt-12 sm:mt-12">
       {/* Header */}
       <div className="mb-4 sm:mb-5 md:mb-6 lg:mb-8">
         <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mb-1 sm:mb-2">Hello Mide,</h1>

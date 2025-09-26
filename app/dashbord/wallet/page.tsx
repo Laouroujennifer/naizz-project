@@ -29,24 +29,35 @@ export default function WalletPage() {
 
   return (
     <DashboardLayout>
-      <h1 className="text-xl font-semibold">Hello Mide,</h1>
-      <p className="text-sm text-gray-500 mb-6">Wallet</p>
+      <div className="pt-16 lg:pt-0 px-4 sm:px-6 lg:px-6">
+        {/* Header */}
+        <div className="mt-4 sm:mt-0 mb-4 sm:mb-6">
+          <h1 className="text-xl sm:text-2xl font-semibold">Hello Mide,</h1>
+          <p className="text-sm text-gray-500">Wallet</p>
+        </div>
 
-      <WalletOverview coins={10000} onUpgrade={() => router.push("/dashboard/wallet/plan")} />
+        {/* Wallet Overview */}
+        <div className="mb-6 sm:mb-8 text-black">
+          <WalletOverview coins={10000} onUpgrade={() => router.push("/dashboard/wallet/plan")} />
+        </div>
 
-      <h2 className="text-base font-medium mb-4">Purchase a coin pack</h2>
+        {/* Coin Packs Section */}
+        <div>
+          <h2 className="text-base sm:text-lg font-medium mb-4 sm:mb-6">Purchase a coin pack</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {coinPacks.map((p, i) => (
-          <CoinPackCard
-            key={i}
-            title={p.title}
-            description={p.description}
-            qty={p.qty}
-            priceLabel={`₦ ${p.price.toLocaleString()}.00`}
-            onBuy={() => handleBuy(p)}
-          />
-        ))}
+          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+            {coinPacks.map((p, i) => (
+              <CoinPackCard
+                key={i}
+                title={p.title}
+                description={p.description}
+                qty={p.qty}
+                priceLabel={`₦ ${p.price.toLocaleString()}.00`}
+                onBuy={() => handleBuy(p)}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </DashboardLayout>
   );

@@ -2,13 +2,37 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { useState } from "react";
+import { supabase } from "../lib/supabaseClient";
+import toast from "react-hot-toast";
 
 export default function Login() {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    router.push("/dashbord");
+    setLoading(true);
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const email = formData.get("email") as string;
+
+    // Envoi du magic link
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: {
+        emailRedirectTo: `${window.location.origin}/dashbord`, // après clic sur le mail
+      },
+    });
+
+    setLoading(false);
+
+    if (error) {
+      toast.error(error.message || "Login failed ❌");
+    } else {
+      toast.success("Magic link sent 📩 Check your email.");
+    }
   };
 
   return (
@@ -51,9 +75,12 @@ export default function Login() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-md transition text-sm lg:text-base"
+                disabled={loading}
+                className={`w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-md transition text-sm lg:text-base ${
+                  loading ? "opacity-50 cursor-not-allowed" : ""
+                }`}
               >
-                Login
+                {loading ? "Sending link..." : "Send Magic Link"}
               </button>
             </form>
 

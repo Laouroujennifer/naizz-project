@@ -124,11 +124,6 @@ export default function Signup() {
               type="button"
               className="w-full flex items-center justify-center border border-gray-300 py-3 rounded-md hover:bg-gray-50 transition text-sm font-medium text-gray-700"
             >
-              <img
-                src="/google-icon.svg"
-                alt="Google"
-                className="h-5 w-5 mr-2"
-              />
               Continue using Google
             </button>
             <p className="mt-5 text-center text-xs lg:text-sm text-gray-600">

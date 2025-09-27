@@ -132,16 +132,16 @@ export default function LanguageAgentsPage() {
             </Link>
           </div>
 
-          {/* Dropdown langues */}
+          {/* Dropdown langues - MODIFIÉ ICI */}
           <div className="sm:mt-0 mt-2">
             <select
               value={selectedLang}
               onChange={(e) => setSelectedLang(e.target.value)}
-              className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-black"
             >
-              <option value="All">All</option>
+              <option value="All" className="text-black bg-white">All</option>
               {languages.map((l) => (
-                <option key={l} value={l}>
+                <option key={l} value={l} className="text-black bg-white">
                   {l}
                 </option>
               ))}

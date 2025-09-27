@@ -1,4 +1,3 @@
-// components/Agents/AgentCard.tsx
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -16,48 +15,46 @@ export default function AgentCard({ name, level, role, image, onClick }: Props) 
 
   return (
     <div
-      className="relative rounded-lg overflow-hidden shadow-sm cursor-pointer group"
+      className="relative rounded-lg overflow-hidden shadow-md cursor-pointer group"
       onClick={onClick}
       role="button"
       tabIndex={0}
       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onClick?.()}
     >
       {/* Image */}
-      <div className="w-full h-40 sm:h-44 md:h-48 relative">
-        <Image
-          src={image}
-          alt={`${name} avatar`}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          style={{ objectFit: "cover" }}
-          className="object-cover"
-        />
-      </div>
+     <div className="w-full h-45 sm:h-60 md:h-72 relative">
+  <Image
+    src={image}
+    alt={`${name} avatar`}
+    fill
+    sizes="(max-width: 768px) 100vw, 33vw"
+    className="object-cover"
+  />
+</div>
 
-      {/* gradient to improve readability */}
-      <div className="absolute left-0 bottom-0 w-full h-28 bg-gradient-to-t from-black/65 to-transparent pointer-events-none" />
 
-      {/* Bottom-left overlay text */}
-      <div className="absolute left-3 bottom-3 z-20">
-        <div className="text-white text-sm md:text-base font-semibold leading-tight">
-          {name}
-        </div>
-        {subtitle && (
-          <div className="text-white text-xs md:text-sm opacity-90 mt-1 max-w-[12rem]">
-            {subtitle}
+      {/* Bandeau fixe en bas */}
+      <div className="absolute bottom-0 left-0 w-full bg-white/2 backdrop-blur-sm px-3 py-2 flex items-center justify-between">
+        {/* Texte */}
+        <div>
+          <div className="text-white text-sm md:text-base font-semibold">
+            {name}
           </div>
-        )}
-      </div>
+          {subtitle && (
+            <div className="text-white text-xs md:text-sm opacity-90">
+              {subtitle}
+            </div>
+          )}
+        </div>
 
-      {/* Circular arrow button bottom-right */}
-      <div className="absolute right-3 bottom-3 z-30">
+        {/* Bouton rond */}
         <button
           onClick={(e) => {
             e.stopPropagation();
             onClick?.();
           }}
           aria-label={`Select ${name}`}
-          className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-blue-600 flex items-center justify-center shadow-md hover:scale-105 transform transition"
+          className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-blue-600 flex items-center justify-center shadow-md hover:scale-105 transform transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

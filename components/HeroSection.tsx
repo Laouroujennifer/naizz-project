@@ -11,8 +11,8 @@ const HeroSection = () => {
 
       {/* Main Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold  text-black text-center leading-snug sm:leading-tight mb-4 sm:mb-6">
-        Say goodbye to <span className="text-blue-600">awkward lessons</span>, <br className="hidden sm:block" />
-        hello <span className="text-blue-600">real conversations</span>.
+        Say <span className="text-blue-600">goodbye</span> to <br /> awkward lessons,
+        <span className="text-blue-600">hello</span>  <br />real <span className="text-blue-600"> conversations</span>.
       </h1>
 
       {/* Sub-description */}

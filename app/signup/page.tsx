@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 "use client";
 import React, { useState } from "react";
@@ -65,7 +66,6 @@ export default function Signup() {
                 placeholder="Name"
                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm lg:text-base"
               />
-
               <input
                 id="email"
                 name="email"
